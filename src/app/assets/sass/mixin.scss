@@ -1,0 +1,66 @@
+@mixin title($color, $weight) {
+    color: $color;
+    font-size: 45px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 40;
+    }
+}
+@mixin content($color, $weight) {
+    color: $color;
+    font-size: 30px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 25px;
+    }
+}
+
+@mixin contentTitle($color, $weight) {
+    color: $color;
+    font-size: 24px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 22px;
+    }
+}
+
+@mixin card($color, $weight) {
+    color: $color;
+    font-size: 22px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+}
+@mixin textLg($color, $weight) {
+    color: $color;
+    font-size: 18px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
+}
+@mixin text($color, $weight) {
+    color: $color;
+    font-size: 16px;
+    font-weight: $weight;
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+
+@mixin link($width, $height, $color, $bcolor, $padding, $radius) {
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: $bcolor;
+    border: 1px solid $bcolor;
+    padding: $padding;
+    border-radius: $radius;
+    transition: all 0.3s ease;
+    background-color: $bcolor;
+    &:hover {
+        background-color: $color;
+        color: $bcolor;
+    }
+}
