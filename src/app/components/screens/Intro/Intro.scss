@@ -145,15 +145,6 @@
                         }
                     }
             
-                    .filter__more {
-                        margin-top: 4px;
-                        font-size: 13px;
-                        color: $blue;
-                        text-decoration: none;
-                        &:hover {
-                        text-decoration: underline;
-                        }
-                    }
                     }
                     .price {
                     display: flex;
@@ -183,6 +174,18 @@
                     gap: 10px;
                     margin-top: 20px;
                 }
+                &__more {
+                    margin-top: 4px;
+                    font-size: 13px;
+                    color: $blue;
+                    background-color: transparent;
+                    border: none;
+                    text-decoration: none;
+                    text-align: start;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    }
                 &__btn {
                     white-space: nowrap;
                     width: 100%;
