@@ -1,0 +1,46 @@
+@import '../../../assets/sass/mixin.scss';
+@import '../../../assets/sass/veriables.scss';
+
+.footer {
+    background-color: #000000;
+    &__content {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 25px;
+        &__socials {
+            display: flex;
+            gap: 40px;
+        }
+        &__social {
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #000000;
+            i {
+                font-size: 23px;
+            }
+        }
+    }
+    &__text {
+        @include text($white, 400);
+        // &::before {
+        //     content: '';
+        //     padding: 1px;
+        //     left: 0;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     right: 0;
+        //     width: 100%;
+        //     position: absolute;
+        //     background-color: #2E344D;
+        // }
+    }
+}
